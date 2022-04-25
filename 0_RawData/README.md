@@ -6,7 +6,7 @@ SRA:SRP021107
 BioProject:PRJNA196801
 
 ## Files
-sample_metadata.txt : Metadata for both the bulk and viral raw reads.
+SraRunInfo.txt : Metadata for both the bulk and viral raw reads.
 
 ## Directories
 
@@ -16,6 +16,7 @@ sample_metadata.txt : Metadata for both the bulk and viral raw reads.
 
 One healthy individual was sampled at 16 time points. For 3 time points bulk metagenomics was sequenced (bacteria metagenomics) and for all 16 time points viral metagenomics was completed.
 For 8 time points two seperate viral metagenomic read runs were done. So there are 24 viral sequence runs.
+See full SRA info (with added in days and replicate) in the file SraRunInfo.txt
 
 For more information on the metadata and how samples were collected see orginal manuscript.
 
@@ -31,6 +32,10 @@ See Fig S2 from Minot 2013 paper for days.
 ### Viral Metagenomics
 See Fig 1A & Table S1 (note there is a typo for day 851-2)
 Unfortunately Table S1 has the '# of reads' which appears to be after QC, as they do no match raw reads.
+For example sample SRR829867 has 18020339 reads but no day has this number in Table S1.
+(For more information I've uploaded a multiqc file on the raw FASTQ files).
+
+#### How I assigned metadata
 I followed the labels from Sample_ID where 'd00-1' where the first digit is the week. Day zero is 00, and week 1 is 01-5.
 The second digit is the day of the week.
 
