@@ -1,16 +1,14 @@
 # Raw Sequences
 
 # Note:
-Due to file storage issues (files being too large) I've implented protocols to move them.
+Raw FASTQ files are too large and are stored on NCBI/EBI. This page is mostly the metadata.
 SRA:SRP021107
 BioProject:PRJNA196801
 
 ## Files
+sample_metadata.txt : Metadata for both the bulk and viral raw reads.
 
 ## Directories
-
-* 0_Bacteria : Bulk metagenomics for which we assembled bacterial genomes
-* 1_Viral : VLPs were seperated and sequenced.
 
 ## Scripts
 
@@ -22,13 +20,22 @@ For 8 time points two seperate viral metagenomic read runs were done. So there a
 For more information on the metadata and how samples were collected see orginal manuscript.
 
 ### Bacteria (Bulk Metagenomics)
+See Fig S2 from Minot 2013 paper for days.
+| SRA	  | SampleID	      | Day	| Week |		
+| ------- | ----------------- | ------- | ---- |
+|SRR828645| BLS020308_1014-01 | 182 	|  1   |
 
-SRR828645 - BLS020308_1014-01 - Day 182 - Week 1
-SRR828661 - BLS020309_1014-02 - Day 852 - Week 2
-SRR828660 - BLS020310_1014-03 - Day 882 - Week 3
+SRR828661 - BLS020309_1014-02 - Day 852 - Week 2  
+SRR828660 - BLS020310_1014-03 - Day 882 - Week 3  
 
 ### Viral Metagenomics
+See Fig 1A & Table S1 (note there is a typo for day 851-2)
+Unfortunately Table S1 has the '# of reads' which appears to be after QC, as they do no match raw reads.
+I followed the labels from Sample_ID where 'd00-1' where the first digit is the week. Day zero is 00, and week 1 is 01-5.
+The second digit is the day of the week.
+
 SRA		Sample_ID	Day	Replicate
+SRR829033       BLS020813_d00-1 0       1
 SRR829867	BLS020814_d00-2	0	2
 SRR935337	BLS020815_d01-1	180	1
 SRR935339	BLS020816_d02-1	181	1
