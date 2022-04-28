@@ -1,2 +1,6 @@
-test2.txt
-
+#Ignore all large file types
+*.fasta
+*.bam
+*.sam
+*.fastq
+*.fastq.gz
