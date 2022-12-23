@@ -8,4 +8,4 @@ This is a repository for all files used in the re-analysis for the paper:
 Bacteriophages Playing Nice: Lysogenic Bacteriophage Replication Stable in the Human Gut Microbiota
 Authors: Steven G. Sutcliffe, Alejandro Reyes, Corinne F. Maurice
 
-![Graphical abstract](https://github.com/sgsutcliffe/Bacteriophages_Playing_Nice/blob/main/graphical_abstract.pdf)
+![Graphical abstract](https://github.com/sgsutcliffe/Bacteriophages_Playing_Nice/blob/main/graphical_abstract.png)
